@@ -78,3 +78,13 @@ The application compares the resume against the job description and generates:
 
 - AI responses depend on the LLM output.
 - Free hosting may introduce cold-start delays.
+Testing
+
+The application was manually tested for:
+
+✔ Resume Parsing
+✔ JD Parsing
+✔ AI Response Generation
+✔ JSON Rendering
+✔ Error Handling
+✔ Responsive UI
