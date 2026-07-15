@@ -1,3 +1,4 @@
+import ResumeUploader from "./components/ResumeUploader";
 import { useState } from "react";
 import api from "./services/api";
 import Header from "./components/Header";
@@ -55,7 +56,9 @@ function App() {
             <h2 className="text-2xl font-bold mb-4">
               Candidate Resume
             </h2>
-
+<ResumeUploader
+  onTextExtracted={(text) => setResume(text)}
+/>
             <textarea
               rows={15}
               className="w-full border rounded-xl p-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
