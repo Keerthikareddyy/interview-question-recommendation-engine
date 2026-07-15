@@ -79,6 +79,8 @@ The application compares the resume against the job description and generates:
 - AI responses depend on the LLM output.
 - Free hosting may introduce cold-start delays.
 Testing
+- AI responses are validated before rendering.
+- If malformed JSON is returned, the application displays an error instead of crashing.
 
 The application was manually tested for:
 
